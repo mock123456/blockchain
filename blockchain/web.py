@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 from blockchain_basic.blockchain import Blockchain, Node
 from blockchain_basic.database import show_all, length_block
 
-# 使用flask部署服务器,__name为根路径,用来获取app的文件等等,app为实例化的flask对象,这个前端做的是有问题的,并没有和实际的数据产生交互,甚至无法调用blockchain.py里头的函数
+# 使用flask部署服务器,__name为根路径,用来获取app的文件等等,app为实例化的flask对象
 app = flask.Flask(__name__)
 # 初始化10个节点的区块链网络
 blockchain = Blockchain(10, 0)
